@@ -22,6 +22,8 @@ import com.badlogic.gdx.backends.android.AndroidApplication;
 import com.badlogic.gdx.backends.android.AndroidApplicationConfiguration;
 import com.github.badoualy.badoualyve.ui.WantedGame;
 
+import tetris.TetrisGame;
+
 public class AndroidLauncher extends AndroidApplication {
 
     @Override
@@ -32,6 +34,6 @@ public class AndroidLauncher extends AndroidApplication {
         AndroidApplicationConfiguration config = new AndroidApplicationConfiguration();
         config.hideStatusBar = false;
         config.useImmersiveMode = true;
-        initialize(new WantedGame(), config);
+        initialize(new TetrisGame(), config);
     }
 }
